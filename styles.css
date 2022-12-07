@@ -1,0 +1,390 @@
+html{
+}
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  text-align: justify !important;
+  line-height: 2em;
+  color: #27272a;
+}
+
+#content {
+  margin-top: 58px !important;
+}
+
+.container-fluid {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 5vw;
+}
+
+/* NAVBAR */
+
+.navbar {
+  background-color: white;
+  padding: 0 6vw;
+  font-weight: 300;
+}
+
+#burger-icon {
+  width: 30px;
+  height: 30px;
+}
+
+@media (max-width: 992px) {
+  .nav-item {
+    border-bottom: 1px solid #E0DDD6;
+    padding: 12px 0;
+  }
+
+  .navbar-nav{
+    padding: 34px;
+  }
+}
+
+.navbar-light .navbar-toggler{
+  border: none;
+}
+
+@media (min-width: 992px) {
+  .navbar-lewagon {
+    justify-content: center;
+  }
+}
+
+.navbar-lewagon {
+  justify-content: space-between;
+  background: white;
+  position: fixed;
+  left: 0px;
+  top: 0;
+  right: 0;
+  z-index: 1000
+}
+
+.navbar-lewagon .navbar-collapse {
+  flex-grow: 0;
+}
+
+.nav-link {
+  font-family: 'Cormorant', serif;
+  text-decoration: none !important;
+  font-size: 1.2em;
+  letter-spacing: 1px;
+  margin-left: 16px;
+  padding-bottom: 0px !important;
+  padding-left: 0px !important
+
+}
+
+.nav-link:hover {
+  border-bottom: 1px solid black;
+}
+
+#down-arrow {
+  border: 1px solid white;
+  padding: 8px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.max-w-500 {
+  max-width:  500px;
+  margin:  0 auto;
+}
+
+/* HERO */
+
+#hero-container{
+  margin: 0 auto;
+  text-align: center;
+  height: calc(100vh - 70px);
+  display: flex;
+  padding: 0 6vw;
+  background-size: cover;
+  object-fit: cover;
+  background-position: 49% 100%;
+  justify-content: center;
+  width: 100%;
+  flex-direction: column;
+}
+
+#hero-title {
+  text-align: center;
+}
+
+/* TITLES */
+
+h1, h2, h3, h4, h5, h6, .logo {
+  font-family: 'Cormorant', serif;
+}
+
+h1, h2 {
+  color: white;
+}
+
+h1 {
+  font-size: 3em !important;
+}
+
+h2 {
+  font-size:  2em !important;
+}
+
+h3 {
+  font-size: 2.5em;
+  scroll-margin-top: 90px;
+  color: #28282c;
+}
+
+h4{
+  font-size: 2em !important;
+}
+
+h5 {
+  font-size: 2em !important;
+}
+
+#logo {
+  font-size: 1em;
+  font-family: 'Cormorant', sans-serif;
+  margin: 8px 0;
+  border-left: 1px solid gray;
+  padding-left: 8px;
+  line-height: 1rem;
+}
+
+/* LINKS */
+
+a {
+  text-decoration:  none !important;
+  color:  inherit !important;
+}
+
+a:hover {
+  font-weight:  700;
+  cursor:  pointer;
+}
+
+/* BUTTONS */
+
+.btn-light {
+  padding: 12px 24px;
+  font-family: 'Cormorant', serif;
+  background-color: hsla(0,0%,100%,.1);
+  color: hsla(0,0%,100%,.8);
+  -webkit-backdrop-filter: blur(2px);
+  backdrop-filter: blur(2px);
+  border: 1px solid hsla(0,0%,100%,.8);
+  font-weight: 500;
+  transition: all .2s;
+  z-index: 1;
+  margin: 24px 0;
+  cursor: pointer;
+  text-align: left; 
+  font-size: 1.4em;
+  max-width: 320px;
+}
+
+.btn-light:hover {
+  background: gray;
+  color: white;
+}
+
+.btn {
+  border-radius: 0;
+  font-family: 'Open Sans', sans-serif;
+  text-decoration: uppercase !important;
+  max-width: 150px;
+  margin: 0 auto;
+  display: block;
+  font-size: 12px;
+  letter-spacing: 3px
+}
+
+.btn:hover {
+  background-color: black;
+  color: white;
+}
+
+/* SECTION TITLES */
+.title-section {
+  margin: 6vw 0;
+  background-size: cover;
+  background-position: 50% 30%;
+  min-height: 150px;
+  display: flex;
+  align-items: center;
+}
+
+.title-section h3 {
+  color: white;
+}
+
+/* PORTRAIT SECTION */
+
+#portrait-image {
+  background-size: cover;
+  background-position: center;
+  object-fit: cover;
+  border: 1px dashed gray;
+  background-color: #edf0f3;
+  min-height: 300px;
+}
+
+#portrait-text {
+  padding: 16px 0;
+}
+
+@media (min-width: 992px) { 
+  #portrait-columns {
+    display: flex;
+    flex-direction: row-reverse;
+    padding-top: 4em;
+  }
+  #portrait-image {
+    width: 30%;
+    margin-right: 24px;
+    
+  }
+  #portrait-text {
+    width: 70%;
+    padding: 0 6vw;
+    text-align: justify;
+  }
+}
+
+/* EXPERTISE SECTION */
+
+.expertise-item {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  padding: 24px;
+  max-width: 700px;
+  margin: 0 auto 24px auto;
+  background-color: white;
+  scroll-margin-top: 90px;
+}
+
+#expertise-items h4, .expertise-item-plan-b h4 {
+  border-bottom: 1px solid #989595;
+  padding-bottom: 8px;
+  margin-bottom: 8px
+}
+
+/* CONTACT */
+
+#contact-text {
+  padding: 3rem;
+  border: 1px solid #e4e4e7;
+}
+
+#contact-map {
+  height: 300px;
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  background-position: center;
+}
+
+@media (min-width: 768px) { 
+  #contact-container {
+    display: flex;
+    align-items: center;
+  }
+  #contact-text { 
+    width: 50%;
+  }
+  #contact-map{
+    width: 50%;
+    height: 400px;
+  }
+}
+
+@media (min-width: 768px) { 
+  #contact-buttons {
+    display: flex;
+  }
+}
+
+.btn-contact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px;
+  background-color: #fafafa;
+  cursor: pointer;
+  border: 1px solid #d4d4d8;
+  font-family: Cormorant;
+  color: #3f3f46;
+  max-width: 200px;
+  margin-bottom: 16px;
+}
+
+.btn-contact:hover {
+  background-color: #f4f4f5;
+  -webkit-transform: translate(0.5px,-0.8px);
+  transform: translate(0.5px,-0.8px);
+  box-shadow: 2px 2px 2px rgb(0 0 0 / 4%);
+}
+
+.btn-icon {
+  height: 30px;
+  background-position: center;
+  object-fit: cover;
+  margin-left: 12px;
+}
+
+
+/* FOOTER */
+
+.footer {
+  border-top: 1px solid #e4e4e7;
+  padding: 16px;
+  text-align: center;
+  margin-top: 48px;
+}
+
+#linkedin-logo {
+  border-radius: 50%;
+  width: 25px;
+  height: 25px
+}
+
+.options {
+  font-size: 0.5em
+}
+
+.section {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size:  cover
+}
+
+.small {
+  font-size: 0.8em;
+}
+
+/* LEGAL TERMS */
+
+.container-small {
+  margin: 0 auto;
+  max-width: 900px;
+}
+
+#legal h1 {
+  margin-top: 3em !important;
+  font-size: 2.5em !important
+}
+
+#legal h2 {
+  font-size: 1.1em !important;
+  margin-top: 2em;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+#legal h1, #legal h2 {
+  color: rgb(38, 38, 38) !important;
+}
