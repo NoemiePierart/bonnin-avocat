@@ -5,7 +5,7 @@ body {
   font-family: 'Source Sans Pro', sans-serif;
   text-align: justify !important;
   line-height: 2em;
-  color: #27272a;
+  color: #323235;
 }
 
 #content {
@@ -18,6 +18,16 @@ body {
   padding: 0 5vw;
 }
 
+p {
+  font-size: 1.1em !important
+}
+
+@media (max-width: 992px) {
+  p {
+    font-size: 1em !important;
+  }
+}
+
 /* NAVBAR */
 
 .navbar {
@@ -27,8 +37,8 @@ body {
 }
 
 #burger-icon {
-  width: 30px;
-  height: 30px;
+  width: 20px;
+  height: 20px;
 }
 
 @media (max-width: 992px) {
@@ -101,7 +111,7 @@ body {
 #hero-container{
   margin: 0 auto;
   text-align: center;
-  height: calc(100vh - 70px);
+  height: calc(100vh - 100px);
   display: flex;
   padding: 0 6vw;
   background-size: cover;
@@ -126,18 +136,30 @@ h1, h2 {
   color: white;
 }
 
+
 h1 {
-  font-size: 3em !important;
+  font-size: 2em !important;
 }
 
 h2 {
-  font-size:  2em !important;
+  font-size:  1.7em !important;
 }
+
+@media (min-width: 992px) { 
+  h1 {
+    font-size: 3em !important;
+  }
+  h2 {
+    font-size:  2em !important;
+  }
+}
+
+
 
 h3 {
   font-size: 2.5em;
   scroll-margin-top: 90px;
-  color: #28282c;
+  color: #323235;
 }
 
 h4{
@@ -149,7 +171,7 @@ h5 {
 }
 
 #logo {
-  font-size: 1em;
+  font-size: 1.2em;
   font-family: 'Cormorant', sans-serif;
   margin: 8px 0;
   border-left: 1px solid gray;
@@ -176,8 +198,6 @@ a:hover {
   font-family: 'Cormorant', serif;
   background-color: hsla(0,0%,100%,.1);
   color: hsla(0,0%,100%,.8);
-  -webkit-backdrop-filter: blur(2px);
-  backdrop-filter: blur(2px);
   border: 1px solid hsla(0,0%,100%,.8);
   font-weight: 500;
   transition: all .2s;
@@ -239,6 +259,10 @@ a:hover {
   padding: 16px 0;
 }
 
+#portrait-columns {
+  margin-top: 32px;
+}
+
 @media (min-width: 992px) { 
   #portrait-columns {
     display: flex;
@@ -286,6 +310,7 @@ a:hover {
   background-repeat: no-repeat;
   background-size: auto 100%;
   background-position: center;
+  margin-top: 36px;
 }
 
 @media (min-width: 768px) { 
@@ -298,13 +323,16 @@ a:hover {
   }
   #contact-map{
     width: 50%;
-    height: 400px;
+    margin-top: 0px;
+  }
+  #contact-buttons {
+    display: flex;
   }
 }
 
-@media (min-width: 768px) { 
-  #contact-buttons {
-    display: flex;
+@media (min-width: 992px) { 
+  #contact-map{
+    height: 400px;
   }
 }
 
