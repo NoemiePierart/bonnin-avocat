@@ -249,11 +249,11 @@ a:hover {
 
 #portrait-image {
   background-size: cover;
-  background-position: center;
+  background-position: 50% 20%;
   object-fit: cover;
-  border: 1px dashed gray;
-  background-color: #edf0f3;
-  min-height: 300px;
+  height: 400px;
+  width: 100%;
+  margin: 0 auto;
 }
 
 #portrait-text {
@@ -264,7 +264,15 @@ a:hover {
   margin-top: 32px;
 }
 
-@media (min-width: 992px) { 
+@media (min-width: 576px) {
+  #portrait-image {
+    height: 500px;
+    width: 400px;
+    background-position: 50% 50%;
+  }
+}
+
+@media (min-width: 768px) { 
   #portrait-columns {
     display: flex;
     flex-direction: row-reverse;
@@ -273,11 +281,12 @@ a:hover {
   #portrait-image {
     width: 30%;
     margin-right: 24px;
-    
+    height: 450px;
+    background-size: cover;
   }
   #portrait-text {
     width: 70%;
-    padding: 0 6vw;
+    padding: 0 6vw 0 2vw;
     text-align: justify;
   }
 }
